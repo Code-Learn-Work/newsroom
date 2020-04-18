@@ -7,6 +7,11 @@
 body, html {
   scroll-behavior: smooth;
 }
+
+twitter-widget {
+  margin: auto
+}
+
 body{
   font-family: var(--font);
   background-color: var(--bg);
@@ -98,7 +103,9 @@ main{
   flex: 1;
 }
 ul{
-  list-style: none;
+  li {
+    margin-left: 20px
+  }
   -webkit-padding-start:0;
   -moz-padding-start:0;
 }
