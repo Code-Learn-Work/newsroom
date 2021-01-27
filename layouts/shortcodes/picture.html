@@ -3,7 +3,11 @@
 {{- $alt := .Get 2 }}
 {{- $normalPath := absURL (printf "images/%s" $normal) }}
 {{- $darkPath := absURL (printf "images/%s" $dark) }}
-<picture class = 'nav_logo'>
+<picture class = "nav_logo wrap pt-2 mt-2" style="text-align: center;">
   <source srcset = '{{ $darkPath }}' media="(prefers-color-scheme: dark)">
-  <img srcset = '{{ $normalPath }}' alt = '{{ $alt }}'>
+  <img class="img-center" 
+    srcset = '{{ $normalPath }}' style="display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;" alt = '{{ $alt }}'> <br>
 </picture>
